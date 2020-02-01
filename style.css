@@ -2,6 +2,12 @@ body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 nav{
@@ -15,8 +21,15 @@ nav{
 .logo{
     color: whitesmoke;
     text-transform: uppercase;
+    text-shadow: black;
+    border-radius: 5px;
+    border-color: black;
     letter-spacing: 5px;
     font-size: 24px;
+    font-style: oblique;
+}
+h2{
+    text-shadow: 5px 1px rgb(0, 0, 0);
 }
 
 .navLinks{
@@ -33,58 +46,6 @@ nav{
     text-decoration: none;
     letter-spacing: 1px;
 }
-.burger{
-    display: none;
-}
-.burger div{
-    width: 35px;
-    height: 5px;
-    background-color: white;
-}
-
-/* body {
-    font-family: Arial;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  form.example input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 80%;
-    background: #f1f1f1;
-  }
-  
-  form.example button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #2196F3;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
-  }
-  
-  form.example button:hover {
-    background: #0b7dda;
-  }
-  
-  form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-  } */
-
-
-
-
-
   body {
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -94,6 +55,7 @@ nav{
     background-color: (214,3,3);
     display: flex;
     
+
   }
   
   .navbar a {
@@ -108,10 +70,11 @@ nav{
   .dropdown {
     float: left;
     overflow: hidden;
+    font-size: 16px;
   }
   
   .dropdown .dropbtn {
-    font-size: 16px;  
+    font-size: 20px;  
     border: none;
     outline: none;
     color: white;
@@ -119,10 +82,15 @@ nav{
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    text-shadow: 3px 3px black;
+    border-radius: 3px;
+    font-style: oblique;
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: gold;
+    background-color: rgb(238, 186, 104);
+    color: black;
+    text-shadow: none;
   }
   
   .dropdown-content {
@@ -144,9 +112,14 @@ nav{
   }
   
   .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: rgb(238, 186, 104);
   }
   
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+ 
